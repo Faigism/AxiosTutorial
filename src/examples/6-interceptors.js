@@ -7,7 +7,9 @@ const Interceptors = () => {
   const fetchData = async () => {
     try {
       const resp = await authFetch('/react-store-products')
-    } catch (error) {}
+    } catch (error) {
+      console.log(error.response)
+    }
   }
 
   useEffect(() => {
